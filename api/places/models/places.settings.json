@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "places",
+  "info": {
+    "name": "Places"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "favorite": {
+      "type": "boolean"
+    },
+    "new": {
+      "type": "boolean"
+    },
+    "img": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "restaurant": {
+      "type": "boolean"
+    },
+    "bar": {
+      "type": "boolean"
+    },
+    "wifi": {
+      "type": "boolean"
+    },
+    "spa": {
+      "type": "boolean"
+    },
+    "gym": {
+      "type": "boolean"
+    },
+    "parking": {
+      "type": "boolean"
+    },
+    "petfriendly": {
+      "type": "boolean"
+    }
+  }
+}
